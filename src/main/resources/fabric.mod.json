@@ -23,7 +23,8 @@
       "net.glasslauncher.example.events.init.BlockListener",
       "net.glasslauncher.example.events.init.ItemListener",
       "net.glasslauncher.example.events.init.PlayerHandlerListener",
-      "net.glasslauncher.example.events.init.RecipeListener"
+      "net.glasslauncher.example.events.init.RecipeListener",
+      "me.b173musicdiscs.item.Discs"
     ],
     "stationapi:event_bus_client": [
       "net.glasslauncher.example.events.init.KeyBindingListener",
