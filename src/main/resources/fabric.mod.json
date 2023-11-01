@@ -14,25 +14,18 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/b1.7.3MusicDiscs/icon.png",
+  "icon": "assets/b173musicdiscs/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "stationapi:event_bus": [
-      "net.glasslauncher.example.events.init.AchievementListener",
-      "net.glasslauncher.example.events.init.BlockListener",
-      "net.glasslauncher.example.events.init.ItemListener",
-      "net.glasslauncher.example.events.init.PlayerHandlerListener",
-      "net.glasslauncher.example.events.init.RecipeListener",
-      "me.b173musicdiscs.item.Discs"
+      "jadestrouble.b173musicdiscs.items.Discs"
+
     ],
     "stationapi:event_bus_client": [
-      "net.glasslauncher.example.events.init.KeyBindingListener",
-      "net.glasslauncher.example.events.init.TextureListener",
-      "net.glasslauncher.example.events.ingame.KeyPressedListener"
+      "jadestrouble.b173musicdiscs.items.Texturing"
     ],
     "stationapi:event_bus_server": [
-      "net.glasslauncher.example.events.init.ServerInitListener"
     ]
   },
   "mixins": [

@@ -1,14 +1,16 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.glasslauncher.example.mixin",
+  "package": "jadestrouble.b173musicdiscs.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "ExampleMixin"
+    "CreeperMixin"
   ],
   "server": [
   ],
   "client": [
+    "RecordMixin",
+    "WorldRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1
