@@ -4,7 +4,8 @@
   "package": "jadestrouble.b173musicdiscs.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "CreeperMixin"
+    "CreeperMixin",
+    "DungeonMixin"
   ],
   "server": [
   ],
