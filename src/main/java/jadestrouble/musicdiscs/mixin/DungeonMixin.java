@@ -1,4 +1,4 @@
-package jadestrouble.b173musicdiscs.mixin;
+package jadestrouble.musicdiscs.mixin;
 
 import net.minecraft.item.ItemInstance;
 import net.minecraft.item.Record;
@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import java.util.Random;
 
-import static jadestrouble.b173musicdiscs.items.Discs.items;
+import static jadestrouble.musicdiscs.items.Discs.items;
 
 @Mixin(Dungeon.class)
 public class DungeonMixin {

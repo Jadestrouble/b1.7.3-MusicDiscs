@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "b173musicdiscs",
+  "id": "musicdiscs",
   "version": "${version}",
 
   "name": "Music Discs",
@@ -14,16 +14,16 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/b173musicdiscs/icon.png",
+  "icon": "assets/musicdiscs/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "stationapi:event_bus": [
-      "jadestrouble.b173musicdiscs.items.Discs"
+      "jadestrouble.musicdiscs.items.Discs"
 
     ],
     "stationapi:event_bus_client": [
-      "jadestrouble.b173musicdiscs.items.Texturing"
+      "jadestrouble.musicdiscs.items.Texturing"
     ],
     "stationapi:event_bus_server": [
     ]

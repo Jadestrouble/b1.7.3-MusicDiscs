@@ -1,4 +1,4 @@
-package jadestrouble.b173musicdiscs.mixin;
+package jadestrouble.musicdiscs.mixin;
 
 import net.minecraft.entity.Item;
 import net.minecraft.entity.monster.Creeper;
@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
-import static jadestrouble.b173musicdiscs.items.Discs.items;
+import static jadestrouble.musicdiscs.items.Discs.items;
 
 @Mixin(Creeper.class)
 abstract public class CreeperMixin extends MonsterBase {

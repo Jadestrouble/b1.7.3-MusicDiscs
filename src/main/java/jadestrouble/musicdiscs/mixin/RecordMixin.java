@@ -1,4 +1,4 @@
-package jadestrouble.b173musicdiscs.mixin;
+package jadestrouble.musicdiscs.mixin;
 
 import net.minecraft.item.ItemInstance;
 import net.minecraft.item.Record;
