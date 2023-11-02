@@ -10,8 +10,7 @@
   "server": [
   ],
   "client": [
-    "RecordMixin",
-    "WorldRendererMixin"
+    "RecordMixin"
   ],
   "injectors": {
     "defaultRequire": 1

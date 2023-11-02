@@ -20,6 +20,8 @@ public class Discs {
     public static ItemBase strad_Disc;
     public static ItemBase ward_Disc;
     public static ItemBase eleven_Disc;
+    public static ItemBase wait_Disc;
+
     @Entrypoint.ModID
     final ModID modId = Null.get();
     final ModID MODID = Null.get();
@@ -35,6 +37,7 @@ public class Discs {
         strad_Disc = new TemplateRecord(modId.id("strad_disc"), "strad").setMaxStackSize(1).setTranslationKey(modId, "Disc");
         ward_Disc = new TemplateRecord(modId.id("ward_disc"), "ward").setMaxStackSize(1).setTranslationKey(modId, "Disc");
         eleven_Disc = new TemplateRecord(modId.id("11_disc"), "11").setMaxStackSize(1).setTranslationKey(modId, "Disc");
+        wait_Disc = new TemplateRecord(modId.id("wait_disc"), "wait").setMaxStackSize(1).setTranslationKey(modId, "Disc");
         items = new ItemBase[]{
                 ItemBase.record13,
                 ItemBase.recordCat,
@@ -46,7 +49,7 @@ public class Discs {
                 Discs.mellohi_Disc,
                 Discs.stal_Disc,
                 Discs.strad_Disc,
-                Discs.ward_Disc
+                Discs.ward_Disc,
         };
     }
 }

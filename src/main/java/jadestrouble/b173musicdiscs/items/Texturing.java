@@ -23,6 +23,7 @@ public class Texturing {
         Discs.strad_Disc.setTexture(Identifier.of(MOD_ID, "item/strad_disc"));
         Discs.ward_Disc.setTexture(Identifier.of(MOD_ID, "item/ward_disc"));
         Discs.eleven_Disc.setTexture(Identifier.of(MOD_ID, "item/11_disc"));
+        Discs.wait_Disc.setTexture(Identifier.of(MOD_ID, "item/wait_disc"));
 
     }
 }
