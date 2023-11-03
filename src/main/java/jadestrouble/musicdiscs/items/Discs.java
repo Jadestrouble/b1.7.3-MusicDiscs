@@ -45,7 +45,7 @@ public class Discs {
         pigstep_Disc = new NewDiscs(modId.id("pigstep_disc"), "musicdiscs:pigstep","pigstep","Lena Raine").setMaxStackSize(1).setTranslationKey(modId, "Disc");
         otherside_Disc = new NewDiscs(modId.id("otherside_disc"), "musicdiscs:otherside","otherside","Lena Raine").setMaxStackSize(1).setTranslationKey(modId, "Disc");
         relic_Disc = new NewDiscs(modId.id("relic_disc"), "musicdiscs:relic","relic","Aaron Cherof").setMaxStackSize(1).setTranslationKey(modId, "Disc");
-        five_Disc = new NewDiscs(modId.id("five_disc"), "musicdiscs:five","five","Samuel Åberg").setMaxStackSize(1).setTranslationKey(modId, "Disc");
+        five_Disc = new NewDiscs(modId.id("five_disc"), "musicdiscs:5","5","Samuel Åberg").setMaxStackSize(1).setTranslationKey(modId, "Disc");
         items = new ItemBase[]{
                 ItemBase.record13,
                 ItemBase.recordCat,
