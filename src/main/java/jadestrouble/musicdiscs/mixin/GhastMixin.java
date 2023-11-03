@@ -11,8 +11,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(Ghast.class)
 public class GhastMixin{
     @Inject(method = "getMobDrops", at = @At("RETURN"), cancellable = true)
-    private void addDisc(CallbackInfoReturnable<ItemBase> cir){
-        cir.setReturnValue(Discs.pigstep_Disc);
+    private void addDisc(CallbackInfoReturnable<Integer> cir){
+        cir.setReturnValue(Discs.pigstep_Disc.id);
     }
 }
 
