@@ -20,7 +20,6 @@
   "entrypoints": {
     "stationapi:event_bus": [
       "jadestrouble.musicdiscs.items.Discs"
-
     ],
     "stationapi:event_bus_client": [
       "jadestrouble.musicdiscs.items.Texturing"

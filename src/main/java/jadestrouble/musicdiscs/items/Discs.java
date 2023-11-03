@@ -21,6 +21,10 @@ public class Discs {
     public static ItemBase ward_Disc;
     public static ItemBase eleven_Disc;
     public static ItemBase wait_Disc;
+    public static ItemBase pigstep_Disc;
+    public static ItemBase otherside_Disc;
+    public static ItemBase relic_Disc;
+    public static ItemBase five_Disc;
 
     @Entrypoint.ModID
     final ModID modId = Null.get();
@@ -37,7 +41,11 @@ public class Discs {
         strad_Disc = new TemplateRecord(modId.id("strad_disc"), "strad").setMaxStackSize(1).setTranslationKey(modId, "Disc");
         ward_Disc = new TemplateRecord(modId.id("ward_disc"), "ward").setMaxStackSize(1).setTranslationKey(modId, "Disc");
         eleven_Disc = new TemplateRecord(modId.id("11_disc"), "11").setMaxStackSize(1).setTranslationKey(modId, "Disc");
-        wait_Disc = new TemplateRecord(modId.id("wait_disc"), "wait").setMaxStackSize(1).setTranslationKey(modId, "Disc");
+        wait_Disc = new NewDiscs(modId.id("wait_disc"), "musicdiscs:wait","wait","C418").setMaxStackSize(1).setTranslationKey(modId, "Disc");
+        pigstep_Disc = new NewDiscs(modId.id("pigstep_disc"), "musicdiscs:pigstep","pigstep","Lena Raine").setMaxStackSize(1).setTranslationKey(modId, "Disc");
+        otherside_Disc = new NewDiscs(modId.id("otherside_disc"), "musicdiscs:otherside","otherside","Lena Raine").setMaxStackSize(1).setTranslationKey(modId, "Disc");
+        relic_Disc = new NewDiscs(modId.id("relic_disc"), "musicdiscs:relic","relic","Aaron Cherof").setMaxStackSize(1).setTranslationKey(modId, "Disc");
+        five_Disc = new NewDiscs(modId.id("five_disc"), "musicdiscs:five","five","Samuel Åberg").setMaxStackSize(1).setTranslationKey(modId, "Disc");
         items = new ItemBase[]{
                 ItemBase.record13,
                 ItemBase.recordCat,
@@ -50,6 +58,8 @@ public class Discs {
                 Discs.stal_Disc,
                 Discs.strad_Disc,
                 Discs.ward_Disc,
+                Discs.wait_Disc,
+                Discs.otherside_Disc,
         };
     }
 }

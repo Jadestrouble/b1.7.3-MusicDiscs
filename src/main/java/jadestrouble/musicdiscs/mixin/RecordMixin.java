@@ -16,6 +16,6 @@ public class RecordMixin implements CustomTooltipProvider {
 
     @Override
     public String[] getTooltip(ItemInstance itemInstance, String originalTooltip) {
-        return new String[]{originalTooltip, title};
+        return new String[]{"§b" + originalTooltip,"C418 - " + title};
     }
 }
