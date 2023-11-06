@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "jadestrouble.ultimatebugfix.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MainMenuMixin"
+  ],
+  "server": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
