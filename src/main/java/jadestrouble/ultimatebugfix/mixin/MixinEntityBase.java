@@ -25,7 +25,7 @@ public class MixinEntityBase {
 
 	@Redirect(method = "move", at = @At(value = "FIELD", target = "Lnet/minecraft/entity/EntityBase;z:D", opcode = Opcodes.PUTFIELD))
 	private void fixZ(EntityBase entityBase, double value) {
-		if (!entityBase.level.isServerSide || entityBase instanceof PlayerBase || !(entityBase instanceof Living))
+		if (!entityBase.level.isClient || entityBase instanceof PlayerBase || !(entityBase instanceof Living))
 			entityBase.z = value;
 	}
 }
