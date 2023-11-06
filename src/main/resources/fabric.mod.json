@@ -1,32 +1,34 @@
 {
   "schemaVersion": 1,
-  "id": "ultimatebugfix",
+  "id": "musicdiscs",
   "version": "${version}",
 
-  "name": "Ultimate Beta Bugfix",
-  "description": "",
+  "name": "Music Discs",
+  "description": "A mod for Minecraft Beta 1.7.3 that adds the C418 Music discs from Beta 1.9 Prerelease 2",
   "authors": [
     "Jadestrouble"
   ],
   "contact": {
     "homepage": "https://glass-launcher.net/",
-    "sources": "https://github.com/Jadestrouble/b1.7.3-UltimateBugfix"
+    "sources": "https://github.com/Jadestrouble/b1.7.3-MusicDiscs"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/ultimatebugfix/icon.png",
+  "icon": "assets/musicdiscs/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "stationapi:event_bus": [
+      "jadestrouble.musicdiscs.items.Discs"
     ],
     "stationapi:event_bus_client": [
+      "jadestrouble.musicdiscs.items.Texturing"
     ],
     "stationapi:event_bus_server": [
     ]
   },
   "mixins": [
-    "ultimatebugfix.mixins.json"
+    "B1.7.3MusicDiscs.mixins.json"
   ],
 
   "depends": {

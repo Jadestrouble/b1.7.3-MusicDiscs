@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "jadestrouble.musicdiscs.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "CreeperMixin",
+    "DungeonMixin",
+    "GhastMixin"
+  ],
+  "server": [
+  ],
+  "client": [
+    "RecordMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
