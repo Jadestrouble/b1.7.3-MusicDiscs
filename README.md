@@ -1,5 +1,5 @@
 # Beta 1.7.3 Music Discs
-My first Babric/StAPI mod. Better than Music+... hopefully
+A mod that adds the modern C418 Music Discs into Beta 1.7.3
 
 Shoutout to @Slainlight on discord for telling me how to do the majority of this.
 
