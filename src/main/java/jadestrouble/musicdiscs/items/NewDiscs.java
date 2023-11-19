@@ -8,11 +8,11 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.PlayerBase;
 import net.minecraft.item.ItemInstance;
 import net.minecraft.level.Level;
-import net.modificationstation.stationapi.api.client.gui.CustomTooltipProvider;
-import net.modificationstation.stationapi.api.registry.Identifier;
-import net.modificationstation.stationapi.api.template.item.TemplateRecord;
+import net.modificationstation.stationapi.api.client.item.CustomTooltipProvider;
+import net.modificationstation.stationapi.api.template.item.TemplateMusicDiscItem;
+import net.modificationstation.stationapi.api.util.Identifier;
 
-public class NewDiscs extends TemplateRecord implements CustomTooltipProvider {
+public class NewDiscs extends TemplateMusicDiscItem implements CustomTooltipProvider {
     String displayTitle = "";
     String musicId = "";
     String author = "";

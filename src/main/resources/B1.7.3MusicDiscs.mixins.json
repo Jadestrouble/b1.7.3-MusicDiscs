@@ -5,8 +5,7 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "CreeperMixin",
-    "DungeonMixin",
-    "GhastMixin"
+    "DungeonMixin"
   ],
   "server": [
   ],

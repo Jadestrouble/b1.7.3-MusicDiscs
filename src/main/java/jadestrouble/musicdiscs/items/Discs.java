@@ -5,8 +5,8 @@ import net.mine_diver.unsafeevents.listener.EventListener;
 import net.minecraft.item.ItemBase;
 import net.modificationstation.stationapi.api.event.registry.ItemRegistryEvent;
 import net.modificationstation.stationapi.api.mod.entrypoint.Entrypoint;
-import net.modificationstation.stationapi.api.registry.ModID;
-import net.modificationstation.stationapi.api.template.item.TemplateRecord;
+import net.modificationstation.stationapi.api.template.item.TemplateMusicDiscItem;
+import net.modificationstation.stationapi.api.util.Namespace;
 import net.modificationstation.stationapi.api.util.Null;
 
 public class Discs {
@@ -26,26 +26,26 @@ public class Discs {
     public static ItemBase relic_Disc;
     public static ItemBase five_Disc;
 
-    @Entrypoint.ModID
-    final ModID modId = Null.get();
-    final ModID MODID = Null.get();
+    @Entrypoint.Namespace
+    final Namespace namespace = Null.get();
+    final Namespace NAMESPACE = Null.get();
 
     @EventListener
     void registerItems(ItemRegistryEvent event) {
-        blocks_Disc = new TemplateRecord(modId.id("blocks_disc"), "blocks").setMaxStackSize(1).setTranslationKey(modId, "Disc");
-        chirp_Disc = new TemplateRecord(modId.id("chirp_disc"), "chirp").setMaxStackSize(1).setTranslationKey(modId, "Disc");
-        far_Disc = new TemplateRecord(modId.id("far_disc"), "far").setMaxStackSize(1).setTranslationKey(modId, "Disc");
-        mall_Disc = new TemplateRecord(modId.id("mall_disc"), "mall").setMaxStackSize(1).setTranslationKey(modId, "Disc");
-        mellohi_Disc = new TemplateRecord(modId.id("mellohi_disc"), "mellohi").setMaxStackSize(1).setTranslationKey(modId, "Disc");
-        stal_Disc = new TemplateRecord(modId.id("stal_disc"), "stal").setMaxStackSize(1).setTranslationKey(modId, "Disc");
-        strad_Disc = new TemplateRecord(modId.id("strad_disc"), "strad").setMaxStackSize(1).setTranslationKey(modId, "Disc");
-        ward_Disc = new TemplateRecord(modId.id("ward_disc"), "ward").setMaxStackSize(1).setTranslationKey(modId, "Disc");
-        eleven_Disc = new TemplateRecord(modId.id("11_disc"), "11").setMaxStackSize(1).setTranslationKey(modId, "Disc");
-        wait_Disc = new NewDiscs(modId.id("wait_disc"), "musicdiscs:wait","wait","C418").setMaxStackSize(1).setTranslationKey(modId, "Disc");
-        pigstep_Disc = new NewDiscs(modId.id("pigstep_disc"), "musicdiscs:Pigstep","pigstep","Lena Raine").setMaxStackSize(1).setTranslationKey(modId, "Disc");
-        otherside_Disc = new NewDiscs(modId.id("otherside_disc"), "musicdiscs:otherside","otherside","Lena Raine").setMaxStackSize(1).setTranslationKey(modId, "Disc");
-        relic_Disc = new NewDiscs(modId.id("relic_disc"), "musicdiscs:Relic","relic","Aaron Cherof").setMaxStackSize(1).setTranslationKey(modId, "Disc");
-        five_Disc = new NewDiscs(modId.id("five_disc"), "musicdiscs:5","5","Samuel Åberg").setMaxStackSize(1).setTranslationKey(modId, "Disc");
+        blocks_Disc = new TemplateMusicDiscItem(namespace.id("blocks_disc"), "blocks").setMaxStackSize(1).setTranslationKey(namespace, "Disc");
+        chirp_Disc = new TemplateMusicDiscItem(namespace.id("chirp_disc"), "chirp").setMaxStackSize(1).setTranslationKey(namespace, "Disc");
+        far_Disc = new TemplateMusicDiscItem(namespace.id("far_disc"), "far").setMaxStackSize(1).setTranslationKey(namespace, "Disc");
+        mall_Disc = new TemplateMusicDiscItem(namespace.id("mall_disc"), "mall").setMaxStackSize(1).setTranslationKey(namespace, "Disc");
+        mellohi_Disc = new TemplateMusicDiscItem(namespace.id("mellohi_disc"), "mellohi").setMaxStackSize(1).setTranslationKey(namespace, "Disc");
+        stal_Disc = new TemplateMusicDiscItem(namespace.id("stal_disc"), "stal").setMaxStackSize(1).setTranslationKey(namespace, "Disc");
+        strad_Disc = new TemplateMusicDiscItem(namespace.id("strad_disc"), "strad").setMaxStackSize(1).setTranslationKey(namespace, "Disc");
+        ward_Disc = new TemplateMusicDiscItem(namespace.id("ward_disc"), "ward").setMaxStackSize(1).setTranslationKey(namespace, "Disc");
+        eleven_Disc = new TemplateMusicDiscItem(namespace.id("11_disc"), "11").setMaxStackSize(1).setTranslationKey(namespace, "Disc");
+        wait_Disc = new TemplateMusicDiscItem(namespace.id("wait_disc"), "wait").setMaxStackSize(1).setTranslationKey(namespace, "Disc");
+        pigstep_Disc = new NewDiscs(namespace.id("pigstep_disc"), "musicdiscs:Pigstep","pigstep","Lena Raine").setMaxStackSize(1).setTranslationKey(namespace, "Disc");
+        otherside_Disc = new NewDiscs(namespace.id("otherside_disc"), "musicdiscs:otherside","otherside","Lena Raine").setMaxStackSize(1).setTranslationKey(namespace, "Disc");
+        relic_Disc = new NewDiscs(namespace.id("relic_disc"), "musicdiscs:Relic","relic","Aaron Cherof").setMaxStackSize(1).setTranslationKey(namespace, "Disc");
+        five_Disc = new NewDiscs(namespace.id("five_disc"), "musicdiscs:5","5","Samuel Åberg").setMaxStackSize(1).setTranslationKey(namespace, "Disc");
         items = new ItemBase[]{
                 ItemBase.record13,
                 ItemBase.recordCat,
@@ -59,7 +59,6 @@ public class Discs {
                 Discs.strad_Disc,
                 Discs.ward_Disc,
                 Discs.wait_Disc,
-                Discs.otherside_Disc,
         };
     }
 }

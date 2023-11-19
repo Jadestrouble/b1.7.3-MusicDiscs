@@ -2,7 +2,7 @@ package jadestrouble.musicdiscs.mixin;
 
 import net.minecraft.item.ItemInstance;
 import net.minecraft.item.Record;
-import net.modificationstation.stationapi.api.client.gui.CustomTooltipProvider;
+import net.modificationstation.stationapi.api.client.item.CustomTooltipProvider;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
