@@ -1,5 +1,6 @@
 # Beta 1.7.3 Music Discs
-A Mod That adds the c418 Music Discs into Beta 1.7.3
+A Mod That adds the modern C418 Music Discs into Beta 1.7.3
+
 Shoutout to @Slainlight on discord for telling me how to do the majority of this.
 
 ## Modrinth Link
