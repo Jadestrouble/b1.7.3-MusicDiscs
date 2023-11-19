@@ -42,9 +42,9 @@ public class Discs {
         ward_Disc = new TemplateMusicDiscItem(namespace.id("ward_disc"), "ward").setMaxStackSize(1).setTranslationKey(namespace, "Disc");
         eleven_Disc = new TemplateMusicDiscItem(namespace.id("11_disc"), "11").setMaxStackSize(1).setTranslationKey(namespace, "Disc");
         wait_Disc = new TemplateMusicDiscItem(namespace.id("wait_disc"), "wait").setMaxStackSize(1).setTranslationKey(namespace, "Disc");
-        pigstep_Disc = new NewDiscs(namespace.id("pigstep_disc"), "musicdiscs:Pigstep","pigstep","Lena Raine").setMaxStackSize(1).setTranslationKey(namespace, "Disc");
+        pigstep_Disc = new NewDiscs(namespace.id("pigstep_disc"), "musicdiscs:Pigstep","Pigstep","Lena Raine").setMaxStackSize(1).setTranslationKey(namespace, "Disc");
         otherside_Disc = new NewDiscs(namespace.id("otherside_disc"), "musicdiscs:otherside","otherside","Lena Raine").setMaxStackSize(1).setTranslationKey(namespace, "Disc");
-        relic_Disc = new NewDiscs(namespace.id("relic_disc"), "musicdiscs:Relic","relic","Aaron Cherof").setMaxStackSize(1).setTranslationKey(namespace, "Disc");
+        relic_Disc = new NewDiscs(namespace.id("relic_disc"), "musicdiscs:Relic","Relic","Aaron Cherof").setMaxStackSize(1).setTranslationKey(namespace, "Disc");
         five_Disc = new NewDiscs(namespace.id("five_disc"), "musicdiscs:5","5","Samuel Åberg").setMaxStackSize(1).setTranslationKey(namespace, "Disc");
         items = new ItemBase[]{
                 ItemBase.record13,
