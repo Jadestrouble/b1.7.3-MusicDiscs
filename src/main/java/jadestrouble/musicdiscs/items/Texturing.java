@@ -23,9 +23,9 @@ public class Texturing {
         Discs.ward_Disc.setTexture(NAMESPACE.id("item/ward_disc"));
         Discs.eleven_Disc.setTexture(NAMESPACE.id("item/11_disc"));
         Discs.wait_Disc.setTexture(NAMESPACE.id("item/wait_disc"));
-        Discs.pigstep_Disc.setTexture(NAMESPACE.id("item/pigstep_disc"));
-        Discs.otherside_Disc.setTexture(NAMESPACE.id("item/otherside_disc"));
-        Discs.relic_Disc.setTexture(NAMESPACE.id("item/relic_disc"));
-        Discs.five_Disc.setTexture(NAMESPACE.id("item/5_disc"));
+//        Discs.pigstep_Disc.setTexture(NAMESPACE.id("item/pigstep_disc"));
+//        Discs.otherside_Disc.setTexture(NAMESPACE.id("item/otherside_disc"));
+//        Discs.relic_Disc.setTexture(NAMESPACE.id("item/relic_disc"));
+//        Discs.five_Disc.setTexture(NAMESPACE.id("item/5_disc"));
     }
 }

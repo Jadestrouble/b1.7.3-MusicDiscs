@@ -1,5 +1,6 @@
 package jadestrouble.musicdiscs.mixin;
 
+import jadestrouble.musicdiscs.Config;
 import net.minecraft.entity.Item;
 import net.minecraft.entity.monster.Creeper;
 import net.minecraft.entity.monster.MonsterBase;
@@ -19,7 +20,10 @@ abstract public class CreeperMixin extends MonsterBase {
 
     @Redirect(method = "onKilledBy", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/monster/Creeper;dropItem(II)Lnet/minecraft/entity/Item;"))
     public Item onKilledBy(Creeper instance, int id, int count) {
-
-        return instance.dropItem(new ItemInstance(items[rand.nextInt(items.length)]), 1);
+        if (Config.config.replaceDiscsOnSkeletonKillCreeper) {
+            return instance.dropItem(new ItemInstance(items[rand.nextInt(items.length)]), 1);
+        } else {
+            return instance.dropItem(id, count);
+        }
     }
 }

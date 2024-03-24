@@ -16,6 +16,7 @@ public class NewDiscs extends TemplateMusicDiscItem implements CustomTooltipProv
     String displayTitle = "";
     String musicId = "";
     String author = "";
+
     public NewDiscs(Identifier i, String music, String displayTitle, String author) {
         super(i, music);
         musicId = music;
@@ -42,6 +43,7 @@ public class NewDiscs extends TemplateMusicDiscItem implements CustomTooltipProv
             return false;
         }
     }
+
     @Override
     public String[] getTooltip(ItemInstance itemInstance, String originalTooltip) {
         return new String[]{"§bMusic Disc" , author + " - "+ displayTitle};
