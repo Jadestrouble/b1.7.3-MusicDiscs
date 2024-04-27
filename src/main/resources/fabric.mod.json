@@ -4,9 +4,11 @@
   "version": "${version}",
 
   "name": "Music Discs",
-  "description": "A mod for Minecraft Beta 1.7.3 that adds the C418 Music discs from Beta 1.9 Prerelease 2",
+  "description": "A mod for Minecraft Beta 1.7.3 that adds the C418 Music discs from Beta 1.9 Prerelease 2.",
   "authors": [
-    "Jadestrouble"
+    "Jadestrouble",
+    "Slainlight",
+    "Telvarost"
   ],
   "contact": {
     "homepage": "https://glass-launcher.net/",
@@ -25,6 +27,12 @@
       "jadestrouble.musicdiscs.items.Texturing"
     ],
     "stationapi:event_bus_server": [
+    ],
+    "gcapi": [
+      "jadestrouble.musicdiscs.Config"
+    ],
+    "bhcreative:event_bus": [
+      "jadestrouble.musicdiscs.CreativeListener"
     ]
   },
   "mixins": [

@@ -71,23 +71,29 @@ dependencies {
 
 	implementation "org.slf4j:slf4j-api:1.8.0-beta4"
 	implementation 'org.apache.logging.log4j:log4j-slf4j18-impl:2.17.2'
+	implementation "blue.endless:jankson:1.2.1"
 
 	modImplementation "net.modificationstation:StationAPI:${project.stapi_version}"
+
+	// Mod Compat
+	// Beta Horizons Creative
+	modImplementation("com.github.paulevsGitch:BHCreative:${project.bhcreative_version}"){
+		transitive false
+	}
 
 	// Optional, but convenient mods for mod creators and users alike.
 	modImplementation("com.github.calmilamsy:ModMenu:${project.modmenu_version}") {
 		transitive false
 	}
-//	modImplementation("net.glasslauncher.mods:GlassConfigAPI:${project.gcapi_version}") {
-//		transitive false
-//	}
-//	modImplementation("net.glasslauncher:HowManyItems-Fabric-Unofficial:${project.howmanyitems_version}") {
-//		transitive false
-//	}
-//	modImplementation('com.github.matthewperiut:spc-babric:0.4.1') {
-//		transitive false
-//	}
-//	modImplementation "com.github.paulevsGitch:BHCreative:0.4.0"
+	modImplementation("net.glasslauncher.mods:GlassConfigAPI:${project.gcapi_version}") {
+		transitive false
+	}
+	modImplementation("net.glasslauncher:HowManyItems-Fabric-Unofficial:${project.howmanyitems_version}") {
+		transitive false
+	}
+	modImplementation('com.github.matthewperiut:spc-babric:0.4.3') {
+		transitive false
+	}
 }
 
 processResources {

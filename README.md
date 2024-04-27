@@ -4,13 +4,20 @@ A Babric Mod that adds the modern C418 Music Discs into Beta 1.7.3
 Shoutout to @Slainlight on discord for telling me how to do the majority of this.
 
 ## Requirements
-Requires StationAPI and Babric
+Requires StationAPI and Babric.
 
 https://babric.github.io/
 
 https://modrinth.com/mod/stationapi
 
+## Optional
+Use with GlassConfigAPI to configure if dungeon discs are replaced or not and if creeper discs are replaced or not.
 
+https://modrinth.com/mod/glass-config-api
+
+Use with BHCreative to get a creative mode tab for adding discs into your world.
+
+https://modrinth.com/mod/bh-creative
 
 ## Modrinth Link
 https://modrinth.com/mod/beta-1.7.3-music-discs
