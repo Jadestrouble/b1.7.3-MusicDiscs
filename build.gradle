@@ -78,6 +78,12 @@ dependencies {
 
 	modImplementation "net.modificationstation:StationAPI:${project.stapi_version}"
 
+	// Mod Compat
+	// Beta Horizons Creative
+	modImplementation("com.github.paulevsGitch:BHCreative:${project.bhcreative_version}"){
+		transitive false
+	}
+
 	// Optional, but convenient mods for mod creators and users alike.
 	modImplementation("com.github.calmilamsy:ModMenu:${project.modmenu_version}") {
 		transitive false
@@ -88,10 +94,9 @@ dependencies {
 	modImplementation("net.glasslauncher:HowManyItems-Fabric-Unofficial:${project.howmanyitems_version}") {
 		transitive false
 	}
-	modImplementation("com.github.matthewperiut:spc-babric:0.4.4") {
+	modImplementation('com.github.matthewperiut:spc-babric:0.4.4') {
 		transitive false
 	}
-	modImplementation "com.github.paulevsGitch:BHCreative:0.4.5"
 }
 
 

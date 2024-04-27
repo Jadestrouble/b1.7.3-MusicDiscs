@@ -4,7 +4,6 @@ import jadestrouble.musicdiscs.Config;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.mob.CreeperEntity;
 import net.minecraft.entity.mob.MonsterEntity;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
@@ -24,9 +23,8 @@ abstract public class CreeperEntityMixin extends MonsterEntity {
     public ItemEntity onKilledBy(CreeperEntity instance, int id, int count) {
         if (Config.config.replaceDiscsOnSkeletonKillCreeper) {
             return instance.method_1327(new ItemStack(items[rand.nextInt(items.length)]), 1);
+        } else {
+            return instance.method_1339(id, count);
         }
-        else {
-            return this.method_1339(Item.RECORD_THIRTEEN.id + this.random.nextInt(2), 1);
-            }
     }
 }
