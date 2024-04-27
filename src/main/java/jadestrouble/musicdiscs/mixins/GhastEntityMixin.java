@@ -14,7 +14,7 @@ public class GhastEntityMixin extends FlyingEntity {
     }
     @Override
     protected void method_933() {
-        if (Config.config.replaceDiscsInDungeonChests) {
+        if (Config.config.replaceGhastsDropPigstep) {
         method_1339(Discs.pigstep_Disc.id, 1);
         }
     }

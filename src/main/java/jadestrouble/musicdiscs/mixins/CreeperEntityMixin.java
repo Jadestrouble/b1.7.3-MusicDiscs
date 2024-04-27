@@ -20,7 +20,7 @@ abstract public class CreeperEntityMixin extends MonsterEntity {
     }
 
     @Redirect(method = "method_938", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/mob/CreeperEntity;method_1339(II)Lnet/minecraft/entity/ItemEntity;"))
-    public ItemEntity onKilledBy(CreeperEntity instance, int id, int count) {
+    public ItemEntity method_1390(CreeperEntity instance, int id, int count) {
         if (Config.config.replaceDiscsOnSkeletonKillCreeper) {
             return instance.method_1327(new ItemStack(items[rand.nextInt(items.length)]), 1);
         } else {
