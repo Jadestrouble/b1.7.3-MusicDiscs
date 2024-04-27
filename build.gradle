@@ -11,6 +11,9 @@ version = project.mod_version
 group = project.maven_group
 
 loom {
+	mixin {
+		useLegacyMixinAp = true
+	}
 	gluedMinecraftJar()
 	customMinecraftManifest.set("https://babric.github.io/manifest-polyfill/${minecraft_version}.json")
 	intermediaryUrl.set("https://maven.glass-launcher.net/babric/babric/intermediary/%1\$s/intermediary-%1\$s-v2.jar")
@@ -41,7 +44,7 @@ repositories {
 	// Used for a StationAPI dependency.
 	maven {
 		name = 'Froge'
-		url = 'https://maven.minecraftforge.net/'
+		url 'https://maven.minecraftforge.net/'
 	}
 	// Used for projects that do not have a maven repository, but do have a GitHub repository with working build scripts.
 	maven {
@@ -66,7 +69,7 @@ repositories {
 dependencies {
 	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
-	mappings "net.glasslauncher:bin:${project.yarn_mappings}"
+	mappings "net.glasslauncher:biny:${project.yarn_mappings}:v2"
 	modImplementation "babric:fabric-loader:${project.loader_version}"
 
 	implementation "org.slf4j:slf4j-api:1.8.0-beta4"
@@ -74,12 +77,6 @@ dependencies {
 	implementation "blue.endless:jankson:1.2.1"
 
 	modImplementation "net.modificationstation:StationAPI:${project.stapi_version}"
-
-	// Mod Compat
-	// Beta Horizons Creative
-	modImplementation("com.github.paulevsGitch:BHCreative:${project.bhcreative_version}"){
-		transitive false
-	}
 
 	// Optional, but convenient mods for mod creators and users alike.
 	modImplementation("com.github.calmilamsy:ModMenu:${project.modmenu_version}") {
@@ -91,10 +88,12 @@ dependencies {
 	modImplementation("net.glasslauncher:HowManyItems-Fabric-Unofficial:${project.howmanyitems_version}") {
 		transitive false
 	}
-	modImplementation('com.github.matthewperiut:spc-babric:0.4.3') {
+	modImplementation("com.github.matthewperiut:spc-babric:0.4.4") {
 		transitive false
 	}
+	modImplementation "com.github.paulevsGitch:BHCreative:0.4.5"
 }
+
 
 processResources {
 	inputs.property "version", project.version

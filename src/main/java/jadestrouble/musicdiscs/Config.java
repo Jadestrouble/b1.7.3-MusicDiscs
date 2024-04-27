@@ -20,5 +20,11 @@ public class Config {
         @MultiplayerSynced
         @ValueOnVanillaServer(booleanValue = TriBoolean.FALSE)
         public Boolean replaceDiscsInDungeonChests = true;
+
+        @ConfigName("Ghasts Drop Pigstep")
+        @Comment("Ghasts will drop Pigstep disc when killed")
+        @MultiplayerSynced
+        @ValueOnVanillaServer(booleanValue = TriBoolean.FALSE)
+        public Boolean replaceGhastsDropPigstep = true;
     }
 }
