@@ -1,6 +1,8 @@
 # Beta 1.7.3 Music Discs
 A Babric Mod that adds the modern C418 Music Discs into Beta 1.7.3
 Shoutout to @Slainlight on discord for telling me how to do the majority of this.
+@Telvarost did BHCreative integration and Configs
+@DanyGames2014 fixed multiplayer tooltips
 ## Requirements
 Requires StationAPI and Babric
 https://babric.github.io/

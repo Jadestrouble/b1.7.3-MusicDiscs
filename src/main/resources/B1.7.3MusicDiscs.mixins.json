@@ -9,10 +9,9 @@
     "GhastEntityMixin"
   ],
   "server": [
+    "MusicDiscItemMixin"
   ],
   "client": [
-    "MusicDiscItemMixin"
-
   ],
   "injectors": {
     "defaultRequire": 1
