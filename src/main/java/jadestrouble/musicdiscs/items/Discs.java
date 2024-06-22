@@ -36,8 +36,8 @@ public void registerItems(ItemRegistryEvent event) {
   ward_Disc = (new NewDiscs(Identifier.of(MOD_ID, "ward_Disc"), "musicdiscs:ward", "C418 - ward")).setTranslationKey(MOD_ID, "Disc");
   eleven_Disc = (new NewDiscs(Identifier.of(MOD_ID, "eleven_Disc"), "musicdiscs:eleven", "C418 - 11")).setTranslationKey(MOD_ID, "Disc");
   wait_Disc = (new NewDiscs(Identifier.of(MOD_ID, "wait_Disc"), "musicdiscs:wait", "C418 - wait")).setTranslationKey(MOD_ID, "Disc");
-  pigstep_Disc = (new NewDiscs(Identifier.of(MOD_ID, "pigstep_Disc"), "musicdiscs:pigstep", "Lana Raine - Pigstep")).setTranslationKey(MOD_ID, "Disc");
-  otherside_Disc = (new NewDiscs(Identifier.of(MOD_ID, "otherside_Disc"), "musicdiscs:otherside", "Lana Raine - otherside")).setTranslationKey(MOD_ID, "Disc");
+  pigstep_Disc = (new NewDiscs(Identifier.of(MOD_ID, "pigstep_Disc"), "musicdiscs:pigstep", "Lena Raine - Pigstep")).setTranslationKey(MOD_ID, "Disc");
+  otherside_Disc = (new NewDiscs(Identifier.of(MOD_ID, "otherside_Disc"), "musicdiscs:otherside", "Lena Raine - otherside")).setTranslationKey(MOD_ID, "Disc");
     items = new Item[]{
            Item.RECORD_THIRTEEN,
            Item.RECORD_CAT,
