@@ -12,6 +12,7 @@
   "server": [
   ],
   "client": [
+    "WorldRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

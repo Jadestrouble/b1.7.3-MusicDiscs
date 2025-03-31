@@ -9,6 +9,12 @@ public class Config {
     public static ConfigFields config = new ConfigFields();
 
     public static class ConfigFields {
+//        @ConfigEntry(
+//                name = "Allow New Disc Music On Servers",
+//                multiplayerSynced = true
+//        )
+//        public Boolean allowNewDiscMusicOnServers = true;
+
         @ConfigEntry(
                 name = "Disable Modern Music Disc Tooltips"
         )
