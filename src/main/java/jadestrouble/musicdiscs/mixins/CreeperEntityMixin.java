@@ -1,5 +1,7 @@
 package jadestrouble.musicdiscs.mixins;
 
+import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
+import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import jadestrouble.musicdiscs.Config;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.mob.CreeperEntity;
@@ -8,22 +10,28 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Redirect;
 
 import static jadestrouble.musicdiscs.items.Discs.items;
 
 @Mixin(CreeperEntity.class)
 abstract public class CreeperEntityMixin extends MonsterEntity {
+
     public CreeperEntityMixin(World arg) {
         super(arg);
     }
 
-    @Redirect(method = "method_938", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/mob/CreeperEntity;method_1339(II)Lnet/minecraft/entity/ItemEntity;"))
-    public ItemEntity method_1390(CreeperEntity instance, int id, int count) {
+    @WrapOperation(
+            method = "onKilledBy",
+            at = @At(
+                    value = "INVOKE",
+                    target = "Lnet/minecraft/entity/mob/CreeperEntity;dropItem(II)Lnet/minecraft/entity/ItemEntity;"
+            )
+    )
+    public ItemEntity method_1390(CreeperEntity instance, int id, int count, Operation<ItemEntity> original) {
         if (Config.config.replaceDiscsOnSkeletonKillCreeper) {
-            return instance.method_1327(new ItemStack(items[random.nextInt(items.length)]), 1);
+            return instance.dropItem(new ItemStack(items[random.nextInt(items.length)]), 1);
         } else {
-            return instance.method_1339(id, count);
+            return original.call(instance, id, count);
         }
     }
 }

@@ -12,10 +12,12 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import java.util.Random;
 
-@Mixin({DungeonFeature.class})
+@Mixin(DungeonFeature.class)
 public class DungeonFeatureMixin {
+
     public DungeonFeatureMixin() {
     }
+
     @Inject(
             method = {"getRandomChestItem"},
             at = {@At("RETURN")},

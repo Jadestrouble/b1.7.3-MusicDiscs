@@ -10,12 +10,13 @@ import static net.modificationstation.stationapi.api.util.Identifier.of;
 
 public class Texturing {
     @Entrypoint.Namespace
-    private static final Namespace MOD_ID = Null.get();
+    public static Namespace MOD_ID = Null.get();
 
     @EventListener
     public void registerTextures(TextureRegisterEvent event) {
         setItemTextures();
     }
+
     private void setItemTextures() {
         Discs.blocks_Disc.setTexture(of(MOD_ID, "item/blocks_disc"));
         Discs.chirp_Disc.setTexture(of(MOD_ID,"item/chirp_disc"));

@@ -29,7 +29,7 @@
     ],
     "stationapi:event_bus_server": [
     ],
-    "gcapi": [
+    "gcapi3": [
       "jadestrouble.musicdiscs.Config"
     ],
     "bhcreative:event_bus": [
