@@ -6,12 +6,13 @@
   "mixins": [
     "CreeperEntityMixin",
     "DungeonFeatureMixin",
-    "GhastEntityMixin"
-  ],
-  "server": [
+    "GhastEntityMixin",
     "MusicDiscItemMixin"
   ],
+  "server": [
+  ],
   "client": [
+    "WorldRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1
