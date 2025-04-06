@@ -28,8 +28,9 @@ public class Texturing {
         Discs.ward_Disc.setTexture(of(MOD_ID,"item/ward_disc"));
         Discs.eleven_Disc.setTexture(of(MOD_ID,"item/11_disc"));
         Discs.wait_Disc.setTexture(of(MOD_ID,"item/wait_disc"));
-        Discs.pigstep_Disc.setTexture(of(MOD_ID,"item/pigstep_disc"));
         Discs.otherside_Disc.setTexture(of(MOD_ID,"item/otherside_disc"));
+        Discs.pigstep_Disc.setTexture(of(MOD_ID,"item/pigstep_disc"));
+        Discs.calm4_Disc.setTexture(of(MOD_ID,"item/calm4_disc"));
     }
 }
 

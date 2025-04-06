@@ -16,8 +16,20 @@ public class GhastEntityMixin extends FlyingEntity {
 
     @Override
     protected void dropItems() {
-        if (Config.config.replaceGhastsDropPigstep) {
-            dropItem(Discs.pigstep_Disc.id, 1);
+        int var1 = this.getDroppedItemId();
+        if (var1 > 0) {
+            int var2 = this.random.nextInt(3);
+
+            if (  (0 < Config.config.chanceGhastsDropPigstep)
+               && (Config.config.chanceGhastsDropPigstep >= this.random.nextFloat())
+            ) {
+                dropItem(Discs.pigstep_Disc.id, 1);
+            }
+
+            for(int var3 = 0; var3 < var2; ++var3) {
+                this.dropItem(var1, 1);
+            }
         }
+
     }
 }

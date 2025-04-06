@@ -18,21 +18,6 @@ public class MusicDiscItemMixin extends Item implements CustomTooltipProvider {
         super(id);
     }
 
-//    @WrapWithCondition(
-//            method = "useOnBlock",
-//            at = @At(
-//                    value = "INVOKE",
-//                    target = "Lnet/minecraft/world/World;worldEvent(Lnet/minecraft/entity/player/PlayerEntity;IIIII)V"
-//            )
-//    )
-//    public boolean cancelSendingJukeboxMessage(World world, PlayerEntity player, int eventId, int x, int y, int z, int id) {
-//        if (Config.config.allowNewDiscMusicOnServers) {
-//            return true;
-//        } else {
-//            return !(this.asItem() instanceof NewDiscs);
-//        }
-//    }
-
     @Override
     public String[] getTooltip(ItemStack itemStack, String originalTooltip) {
         if (Config.config.disableModernMusicDiscTooltips) {

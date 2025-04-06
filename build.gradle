@@ -107,13 +107,13 @@ dependencies {
 		transitive false
 	}
 
-//	modImplementation("net.glasslauncher.mods:AlwaysMoreItems:${project.alwaysmoreitems_version}") {
-//		transitive false
-//	}
-//
-//	modImplementation("net.danygames2014:spawneggs:${project.spawneggs_version}") {
-//		transitive false
-//	}
+	modImplementation("net.glasslauncher.mods:AlwaysMoreItems:${project.alwaysmoreitems_version}") {
+		transitive false
+	}
+
+	modImplementation("net.danygames2014:spawneggs:${project.spawneggs_version}") {
+		transitive false
+	}
 }
 
 processResources {

@@ -1,5 +1,6 @@
 package jadestrouble.musicdiscs.items;
 
+import jadestrouble.musicdiscs.Config;
 import net.mine_diver.unsafeevents.listener.EventListener;
 import net.minecraft.item.Item;
 import net.modificationstation.stationapi.api.event.registry.ItemRegistryEvent;
@@ -24,8 +25,9 @@ public class Discs {
     public static Item ward_Disc;
     public static Item eleven_Disc;
     public static Item wait_Disc;
-    public static Item pigstep_Disc;
     public static Item otherside_Disc;
+    public static Item pigstep_Disc;
+    public static Item calm4_Disc;
 
     @EventListener
     public void registerItems(ItemRegistryEvent event) {
@@ -41,6 +43,11 @@ public class Discs {
         wait_Disc = (new NewDiscs(Identifier.of(MOD_ID, "wait_Disc"), "musicdiscs:wait", "C418 - wait")).setTranslationKey(MOD_ID, "Disc");
         otherside_Disc = (new NewDiscs(Identifier.of(MOD_ID, "otherside_Disc"), "musicdiscs:otherside", "Lena Raine - otherside")).setTranslationKey(MOD_ID, "Disc");
         pigstep_Disc = (new NewDiscs(Identifier.of(MOD_ID, "pigstep_Disc"), "musicdiscs:pigstep", "Lena Raine - Pigstep")).setTranslationKey(MOD_ID, "Disc");
+        if (Config.config.calm4DisplaysMagneticAsDiscName) {
+            calm4_Disc = (new NewDiscs(Identifier.of(MOD_ID, "calm4_Disc"), "musicdiscs:calm4", "Notch - magnetic")).setTranslationKey(MOD_ID, "Disc");
+        } else {
+            calm4_Disc = (new NewDiscs(Identifier.of(MOD_ID, "calm4_Disc"), "musicdiscs:calm4", "Notch - calm4")).setTranslationKey(MOD_ID, "Disc");
+        }
 
         items = new Item[]{
             Item.RECORD_THIRTEEN,
@@ -57,6 +64,7 @@ public class Discs {
             Discs.wait_Disc,
             Discs.otherside_Disc,
             Discs.pigstep_Disc,
+            Discs.calm4_Disc,
         };
     }
 }
