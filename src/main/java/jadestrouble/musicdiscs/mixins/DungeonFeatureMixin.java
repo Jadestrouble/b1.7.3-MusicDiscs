@@ -29,7 +29,11 @@ public class DungeonFeatureMixin {
             if (i == null)
                 return;
             if (cir.getReturnValue().getItem() instanceof MusicDiscItem) {
-                cir.setReturnValue(new ItemStack(Discs.items[rand.nextInt(Discs.items.length)], 1));
+                if (Config.config.addCalm4MusicDisc) {
+                    cir.setReturnValue(new ItemStack(Discs.items[rand.nextInt(Discs.items.length)], 1));
+                } else {
+                    cir.setReturnValue(new ItemStack(Discs.items[rand.nextInt(Discs.items.length - 1)], 1));
+                }
             }
         }
     }

@@ -9,23 +9,29 @@ public class Config {
     public static ConfigFields config = new ConfigFields();
 
     public static class ConfigFields {
-//        @ConfigEntry(
-//                name = "Allow New Disc Music On Servers",
-//                multiplayerSynced = true
-//        )
-//        public Boolean allowNewDiscMusicOnServers = true;
+        @ConfigEntry(
+                name = "Add Calm4 (Magnetic Circuit) Music Disc",
+                multiplayerSynced = true
+        )
+        public Boolean addCalm4MusicDisc = true;
+
+        @ConfigEntry(
+                name = "Calm4 Displays Magnetic As Disc Name",
+                description = "Restart required for changes to take effect"
+        )
+        public Boolean calm4DisplaysMagneticAsDiscName = true;
+
+        @ConfigEntry(
+                name = "Chance Ghasts Drop Pigstep",
+                description = "Float value between 0.0 (0%) and 1.0 (100%)",
+                multiplayerSynced = true
+        )
+        public Float chanceGhastsDropPigstep = 0.056f;
 
         @ConfigEntry(
                 name = "Disable Modern Music Disc Tooltips"
         )
         public Boolean disableModernMusicDiscTooltips = false;
-
-        @ConfigEntry(
-                name = "Ghasts Drop Pigstep",
-                description = "Ghasts will drop Pigstep disc when killed",
-                multiplayerSynced = true
-        )
-        public Boolean replaceGhastsDropPigstep = true;
 
         @ConfigEntry(
                 name = "Replace Creeper/Skeleton Discs",
